@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobi's World</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Resetting some default styles for a clean slate */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFF8DC; /* Light Gray */
+            color: #333; /* Dark Gray */
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333; /* Dark Gray */
+            color: #fff; /* White */
+            padding: 40px;
+        }
+
+        h1, h2 {
+            color: #fff; /* White */
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #483C32; /* Gray */
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            background-color: #1a1a1a; /* Dark Charcoal */
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* White */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff9a00; /* Orange */
+        }
+
+        section {
+            background-color: #ff9a00; /* Orange */
+            color: #333; /* Dark Gray */
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-section {
+            background-color: #d3d0cb; /* Light Gray */
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video {
+            background-color: #111; /* Light Gray */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .minecraft-button {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #cc0000; /* Dark Red */
+            color: #fff; /* White */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: mine 0.2s infinite;
+        }
+
+        .minecraft-button:hover {
+            background-color: #ff0000; /* Red */
+        }
+
+        @keyframes mine {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+        }
+
+        .discord-section {
+            background-color: #7289da; /* Discord Blue */
+            color: #fff; /* White */
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .discord-invite {
+            background-color: #fff; /* White */
+            color: #7289da; /* Discord Blue */
+            padding: 10px 20px;
+            border: 2px solid #7289da; /* Discord Blue */
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .discord-invite:hover {
+            background-color: #7289da; /* Discord Blue */
+            color: #fff; /* White */
+        }
+
+        .mini-games-section {
+            background-color: #f0f0f0; /* Off-White */
+            color: #333; /* Dark Gray */
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact {
+            background-color: #ececa3; /* Light Yellow */
+            color: #555; /* Dark Charcoal */
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333; /* Dark Gray */
+            color: #fff; /* White */
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #fff;">Welcome to Tobi's World</h1>
+        <p style="color: #ff6600;">Experience the best of Minecraft adventures!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2 style="color: #333;">About Tobi</h2>
+        <p style="color: #000;">A boy who just wants peace.</p>
+    </section>
+
+    <section class="discord-section" id="discord">
+        <h2>Join Our Discord Community</h2>
+        <p>Connect with other Minecraft enthusiasts and stay updated:</p>
+        <a href="https://discord.gg/5c87rmUKwq" class="discord-invite">Join Now</a>
+    </section>
+
+    <section id="videos" class="video-section">
+        <h2>Latest Videos</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WMtNEWtHLww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gU4xR7Zc8qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="games" class="mini-games-section">
+        <h2 style="color: #333;">Play Minecraft Mini-Games</h2>
+        <p>Enjoy some simple Minecraft-themed games:</p>
+        <ul>
+            <li><a href="quiz.html">Game 1: Minecraft Quiz</a></li>
+            <li><a href="game2.html">Game 2: Block Breaker</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 style="color: #555;">Contact Us</h2>
+        <p>Have questions or suggestions? Feel free to reach out:</p>
+        <p>Email: contact@thegreatwhitecreeper.com</p>
+        <p>Follow us on social media: <a href="https://discord.gg/5c87rmUKwq">Discord</a> | <a href="https://www.instagram.com/tobi_one7/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 TheGreatWhiteCreeper</p>
+    </footer>
+</body>
+</html>

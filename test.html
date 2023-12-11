@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to TheGreatWhiteCreeper</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'MinecraftFont', Arial, sans-serif;
+            overflow: hidden;
+            background: url('D:\SPOILER_wp11829485-topographic-white-wallpapers.jpg') center/cover fixed; /* Replace with your image path */
+            color: #000;
+        }
+
+        .welcome-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        h1 {
+            font-size: 64px; /* Increased size */
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #000; /* Set text color to black for better visibility on the white background */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflow text */
+            border-right: 2px solid #f4f1ec; /* Typing cursor */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added shadow */
+            animation: typing 3s steps(40) forwards, scribbleText 2s ease-in-out 1s; /* Typing and scribble animation */
+        }
+
+        .start-button {
+            background-color: #005b96;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 5px 10px 0px #666; /* Added shadow */
+            margin-top: 20px; /* Shifted down */
+            animation: bounce 0.5s ease, scribbleText 2s ease-in-out 1s; /* Bounce and scribble animation */
+        }
+
+        .start-button:hover {
+            background-color: #ff6700;
+            transform: scale(1.05) translateY(5px); /* Moved down on hover */
+            animation: bounce 0.5s ease;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 120px; /* Reduced size */
+            height: 120px; /* Reduced size */
+            margin: 10px 0 0 30px; /* Shifted down and to the left */
+            animation: growAndShrink 3s ease infinite alternate; /* Size grow and reduce animation */
+        }
+
+       
+
+        .logo {
+            width: 80%;
+            height: 80%;
+            overflow: hidden;
+            animation: scribbleLogo 4s ease-in-out 4s; /* Scribble animation for the logo */
+            border: 5px solid #333333; /* White border */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow added */
+            border-radius: 50%; /* Circular frame for the logo */
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes growAndShrink {
+            0%, 100% {
+                transform: scale(0.9); /* Adjusted size */
+            }
+            50% {
+                transform: scale(1); /* Adjusted size */
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes scribbleText {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(8px);
+            }
+            50% {
+                transform: translateX(-8px);
+            }
+            75% {
+                transform: translateX(4px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scribbleBox {
+            0% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(8px);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+            75% {
+                transform: translateY(4px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scribbleLogo {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(8deg);
+            }
+            50% {
+                transform: rotate(-8deg);
+            }
+            75% {
+                transform: rotate(4deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to <span style="color:#000;">Tobi's</span> <span style="color:#000;">World</span></h1>
+        <p class="header-text">Let's begin the journey</p>
+        <button class="start-button" onclick="startAnimation()">Start Exploring</button>
+    </div>
+
+    <div class="logo-container">
+        <div class="logo-box">
+            <div class="logo">
+                <img src="D:\logo.png.png" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startAnimation() {
+            window.location.href = 'D:\saim.html';
+        }
+    </script>
+</body>
+
+</html>
